@@ -1,0 +1,24 @@
+[
+  {
+    "method": "GET",
+    "url": "/api/orders/*",
+    "status": 200,
+    "delay": 300,
+    "payload": {
+      "id": "any",
+      "status": "shipped",
+      "items": [{ "sku": "ABC-123", "qty": 2 }],
+      "mocked": true
+    }
+  },
+  {
+    "method": "POST",
+    "url": "/api/orders",
+    "status": 201,
+    "payload": {
+      "id": "mock-order-999",
+      "status": "created",
+      "mocked": true
+    }
+  }
+]
